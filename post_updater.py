@@ -2,7 +2,7 @@ import os
 from github import Github
 from datetime import datetime
 import platform
-import subprocess  # Für Druckbefehle auf Unix/macOS
+import subprocess  # Für Druckbefehle auf Unix/macOS/Linux
 
 # GitHub Setup
 token = os.getenv("GITHUB_TOKEN")
@@ -14,11 +14,22 @@ repo = g.get_repo(repo_name)
 DEFAULT_TITLE = "Community Memory Garden"
 DEFAULT_IMAGE_PATH = "computer.jpeg"
 
+def format_for_58mm(text):
+    # Maximale Zeichen pro Zeile (58mm Drucker, ca. 32 Zeichen je nach Schriftart)
+    max_chars = 32
+    lines = []
+    for line in text.splitlines():
+        while len(line) > max_chars:
+            lines.append(line[:max_chars])
+            line = line[max_chars:]
+        lines.append(line)
+    return "\n".join(lines)
+
 def add_post(text):
     # Aktuelle Datei holen
     file = repo.get_contents("index.html")
     content = file.decoded_content.decode()
-    
+
     # Neuen Post erstellen
     timestamp = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
     new_post = f'''
@@ -32,10 +43,10 @@ def add_post(text):
         <hr>
         <div class="content">{text}</div>
     </div>'''
-    
+
     # Post einfügen (nach der posts div)
     new_content = content.replace('<div id="posts">', '<div id="posts">\n        ' + new_post)
-    
+
     # Datei aktualisieren
     repo.update_file(
         file.path,
@@ -43,37 +54,26 @@ def add_post(text):
         new_content,
         file.sha
     )
-    
+
     # Den Post-Inhalt drucken
     print_post(text, timestamp)
 
 def print_post(text, timestamp):
     # Inhalt für den Druck formatieren
     formatted_text = f"Post erstellt am: {timestamp}\n\nTitel: {DEFAULT_TITLE}\n\n{text}"
-    
-    if platform.system() == "Windows":
-        # Drucken unter Windows
-        import win32print
-        import win32ui
-        printer = win32print.GetDefaultPrinter()
-        hprinter = win32ui.CreateDC()
-        hprinter.CreatePrinterDC(printer)
-        hprinter.StartDoc("Neuer Post")
-        hprinter.StartPage()
-        hprinter.TextOut(100, 100, formatted_text)  # Position und Text
-        hprinter.EndPage()
-        hprinter.EndDoc()
-        hprinter.DeleteDC()
-        print("✓ Post wurde gedruckt!")
-    else:
-        # Drucken unter macOS/Linux (verwende lpr oder lp)
+    formatted_text = format_for_58mm(formatted_text)
+
+    if platform.system() in ["Linux", "Darwin"]:  # Für Raspberry Pi (Linux/macOS)
         try:
+            # Verwende `lpr`, das auf dem Raspberry Pi verfügbar ist
             process = subprocess.run(
                 ["lpr"], input=formatted_text.encode(), text=False, check=True
             )
-            print("✓ Post wurde gedruckt!")
+            print("\u2713 Post wurde gedruckt!")
         except Exception as e:
             print(f"Fehler beim Drucken: {e}")
+    else:
+        print("Druckfunktion ist nur unter Linux/macOS verfügbar.")
 
 def main():
     print("Post-Eingabe (Strg+C zum Beenden)")
@@ -81,11 +81,11 @@ def main():
         try:
             # Eingabe des Textinhalts
             text = input("\nInhalt des Posts: ").strip()
-            
+
             # Validierung der Eingabe
             if text:
                 add_post(text)
-                print("✓ Post wurde gesendet!")
+                print("\u2713 Post wurde gesendet!")
             else:
                 print("Der Inhalt des Posts darf nicht leer sein!")
         except KeyboardInterrupt:
