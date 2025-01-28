@@ -6,7 +6,7 @@ import subprocess  # Für Druckbefehle auf Unix/macOS/Linux
 
 # GitHub Setup
 token = os.getenv("GITHUB_TOKEN")
-repo_name = "lulugrosche/post"  # Dein GitHub-Repository
+repo_name = "communitymemorygarden.github.io"  # Dein GitHub-Repository
 g = Github(token)
 repo = g.get_repo(repo_name)
 
