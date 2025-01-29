@@ -6,13 +6,13 @@ import subprocess  # Für Druckbefehle auf Unix/macOS/Linux
 
 # GitHub Setup
 token = os.getenv("GITHUB_TOKEN")
-repo_name = "communitymemorygarden.github.io"  # Dein GitHub-Repository
+repo_name = "communitymemorygarden/communitymemorygarden.github.io"  # Dein GitHub-Repository
 g = Github(token)
 repo = g.get_repo(repo_name)
 
 # Feste Überschrift und Bild
 DEFAULT_TITLE = "Community Memory Garden"
-DEFAULT_IMAGE_PATH = "computer.jpeg"
+DEFAULT_IMAGE_PATH = "undnochmal.png"
 
 def format_for_58mm(text):
     # Maximale Zeichen pro Zeile (58mm Drucker, ca. 32 Zeichen je nach Schriftart)
