@@ -12,7 +12,7 @@ repo = g.get_repo(repo_name)
 
 # Feste Überschrift und Bild
 DEFAULT_TITLE = "Community Memory Garden"
-DEFAULT_IMAGE_PATH = "undnochmal.png"
+DEFAULT_IMAGE_PATH = "cmg logo.png"
 
 def format_for_58mm(text):
     # Maximale Zeichen pro Zeile (58mm Drucker, ca. 32 Zeichen je nach Schriftart)
