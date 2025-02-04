@@ -124,33 +124,33 @@ hr {
   }
   
   .animated-path {
-    animation: draw 130s linear forwards;
+    animation: draw 130s linear infinite;
     stroke: #584c8f; 
     animation-iteration-count: 1;
     display: none;
   }
 
   .animated-path2 {
-    animation: draw 130s linear forwards;
+    animation: draw 130s linear infinite;
     stroke: #584c8f;
-    animation-iteration-count: 1;
+    animation-direction: alternate;
   }
 
   .animated-path3 {
-    animation: draw 130s linear forwards;
+    animation: draw 130s linear infinite;
     stroke: #553838;
-    animation-iteration-count: 1;
+    animation-direction: alternate;
   }
 
   .animated-path4 {
-    animation: draw 130s linear forwards;
+    animation: draw 130s linear infinite;
     stroke: #5a6dff; 
-    animation-iteration-count: 1;
+    animation-direction: alternate;
   }
   .animated-path5 {
-    animation: draw 130s linear forwards;
+    animation: draw 130s linear infinite;
     stroke: #383547;
-    animation-iteration-count: 1;
+    animation-direction: alternate;
   }
 
   @keyframes draw {
@@ -331,38 +331,42 @@ line-height: 0.6em;
       }
       
       .animated-path {
-        animation: draw 230s linear forwards;
+        animation: draw 230s linear infinite;
         stroke: #908c8c; /* Grün */
-        animation-iteration-count: 1;
+        animation-direction: alternate;
       }
       
       .animated-path2 {
-        animation: draw 250s linear forwards;
+        animation: draw 250s linear infinite;
         stroke: #e96f6f; /* Lila */
-        animation-iteration-count: 1;
+        animation-direction: alternate;
       }
     
       .animated-path3 {
-        animation: draw 260s linear forwards;
+        animation: draw 260s linear infinite;
         stroke: #db805f; /* Lila */
+        animation-direction: alternate;
        
       }
     
       .animated-path4 {
-        animation: draw 300s linear forwards;
+        animation: draw 300s linear infinite;
         stroke: #bc6161; /* Lila */
+        animation-direction: alternate;
        
       }
     
       .animated-path5 {
-        animation: draw 300s linear forwards;
+        animation: draw 300s linear infinite;
         stroke: #b0d574; /* Lila */
+        animation-direction: alternate;
        
       }
     
       .animated-path6 {
-        animation: draw 400s linear forwards;
+        animation: draw 400s linear infinite;
         stroke: #d5ed7b; /* Lila */
+        animation-direction: alternate;
        
       }
       
