@@ -13,8 +13,19 @@ body {
   overflow-x: hidden;
 }
 
+.überschrift-garden {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 70px;
+  position: fixed;
+  top: 30px;
+  margin-left: 20px;
+  font-family: 'Bon-Mono';
+  line-height: 0.6em;
 
-h2 {
+}
+
+h3 {
     font-family: 'Bon-Mono';
     text-align: left;
     font-size: 17px;
@@ -58,118 +69,20 @@ img {
   
 }
 
-
 hr {
 
     border-top: 1px dashed rgb(0, 0, 0);
 }
 
 
-
-  svg {
-    position: fixed;
-    z-index: 2; 
-    pointer-events: none;
-  }
-
-  .svg1 {
-    top: 0; /* Abstand von oben */
-    left: 600px; /* Abstand von links */
-    width: 500px;
-    height: auto;
-    opacity: 40%;
-    
-  } 
-  .svg2 {
-    top: 0; /* Abstand von oben */
-    left: 700px; /* Abstand von links */
-    width: 700px;
-    height: auto;
-    opacity: 40%;
-    
-  } 
-
-  .svg3 {
-    top: 0; /* Abstand von oben */
-    left: 0px; /* Abstand von links */
-    width: 800px;
-    height: auto;
-    opacity: 40%;
-    
-  } 
-  .svg4 {
-    top: 500; /* Abstand von oben */
-    left: 0px; /* Abstand von links */
-    width: 500px;
-    height: auto;
-    opacity: 40%;
-    
-  } 
-
-  .svg5 {
-    top: 0; /* Abstand von oben */
-    left: 80px; /* Abstand von links */
-    width: 1400px;
-    height: auto;
-    opacity: 40%;
-    
-  } 
-
-  path {
-    fill: none;
-    stroke-width: 1;
-    stroke-linecap: round;
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
-  }
-  
-  .animated-path {
-    animation: draw 130s linear infinite;
-    stroke: #584c8f; 
-    animation-iteration-count: 1;
-    display: none;
-  }
-
-  .animated-path2 {
-    animation: draw 130s linear infinite;
-    stroke: #584c8f;
-    animation-direction: alternate;
-  }
-
-  .animated-path3 {
-    animation: draw 130s linear infinite;
-    stroke: #553838;
-    animation-direction: alternate;
-  }
-
-  .animated-path4 {
-    animation: draw 130s linear infinite;
-    stroke: #5a6dff; 
-    animation-direction: alternate;
-  }
-  .animated-path5 {
-    animation: draw 130s linear infinite;
-    stroke: #383547;
-    animation-direction: alternate;
-  }
-
-  @keyframes draw {
-    from {
-      stroke-dasharray: 0, 500;
-    }
-    to {
-      stroke-dasharray: 500, 0;
-    }
-  }
-
   /* Button-Styling */
 .button {
     display: inline-block;
-    margin: 20px;
+    margin-left: 20px;
     padding: 10px 20px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .button:hover {
@@ -198,7 +111,6 @@ hr {
     text-align: center;
     font-size: 22px;
 
-
 }
 
 .allgemeine-infos {
@@ -216,56 +128,193 @@ hr {
 
 }
 
-h1 {
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 80px;
-  position: fixed;
-  top: 0px;
-  margin-left: 20px;
-  font-family: 'Bon-Mono';
-line-height: 0.6em;
+/* Hintergrund Animation Our Garden*/ 
 
+svg {
+  position: fixed;
+  z-index: 2; 
+  pointer-events: none;
 }
 
+.svg1 {
+  top: 0; /* Abstand von oben */
+  left: 600px; /* Abstand von links */
+  width: 500px;
+  height: auto;
+  opacity: 40%;
+  
+} 
+.svg2 {
+  top: 0; /* Abstand von oben */
+  left: 700px; /* Abstand von links */
+  width: 700px;
+  height: auto;
+  opacity: 40%;
+  
+} 
+
+.svg3 {
+  top: 0; /* Abstand von oben */
+  left: 0px; /* Abstand von links */
+  width: 800px;
+  height: auto;
+  opacity: 40%;
+  
+} 
+.svg4 {
+  top: 500; /* Abstand von oben */
+  left: 0px; /* Abstand von links */
+  width: 500px;
+  height: auto;
+  opacity: 40%;
+  
+} 
+
+.svg5 {
+  top: 0; /* Abstand von oben */
+  left: 80px; /* Abstand von links */
+  width: 1400px;
+  height: auto;
+  opacity: 40%;
+  
+} 
+
+path {
+  fill: none;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+.animated-path {
+  animation: draw 130s linear forwards;
+  stroke: #584c8f; 
+  animation-iteration-count: 1;
+  display: none;
+}
+
+.animated-path2 {
+  animation: draw 130s linear forwards;
+  stroke: #584c8f;
+  animation-iteration-count: 1;
+}
+
+.animated-path3 {
+  animation: draw 130s linear forwards;
+  stroke: #553838;
+  animation-iteration-count: 1;
+}
+
+.animated-path4 {
+  animation: draw 130s linear forwards;
+  stroke: #5a6dff; 
+  animation-iteration-count: 1;
+}
+.animated-path5 {
+  animation: draw 130s linear forwards;
+  stroke: #383547;
+  animation-iteration-count: 1;
+}
+
+@keyframes draw {
+  from {
+    stroke-dasharray: 0, 500;
+  }
+  to {
+    stroke-dasharray: 500, 0;
+  }
+}
+
+
 /* About Seite-Styling */
+
+.einleitung {
+  margin-top: 300px;
+  font-size: 35px;
+  word-spacing: -0.05em;
+  letter-spacing: -0.02em;
+  display: flex;
+  height: 65vh;
+}
+
+.überschrift-about {
+  text-align: right;
+  font-size: 70px;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  margin-right: 20px;
+  font-family: 'Bon-Mono';
+  line-height: 0.6em;
+}
+
+.textüberschrift-about {
+text-align: left;
+font-size: 30px;
+width: 50%;
+padding: 20px;
+font-size: 35px;
+word-spacing: -0.05em;
+letter-spacing: -0.02em;
+display: flex;
+
+}
       
-      .container {
-        display: flex;
-        justify-content: center; /* Horizontale Zentrierung */
-        align-items: center; /* Vertikale Zentrierung */
-        flex-direction: column; /* Für vertikales Layout */
-        width: 100vw; /* Volle Breite des Viewports */
-        height: 100vh; /* Volle Höhe des Viewports */
-        position: absolute; /* Container bleibt im Viewport */
-        top: 0;
-        left: 0;
-        margin-top: 4300px;
-     
-      }
-      .container1 {
-        display: flex;
-        justify-content: center; /* Horizontale Zentrierung */
-        align-items: center; /* Vertikale Zentrierung */
-        flex-direction: column; /* Für vertikales Layout */
-        width: 100vw; /* Volle Breite des Viewports */
-        height: 100vh; /* Volle Höhe des Viewports */
-        position: absolute; /* Container bleibt im Viewport */
-        top: 0;
-        left: 0;
-     
-      }
-      
-      .image {
-        width: 500px;
-        
-      }
-      
-      a {
-        color: rgb(0, 0, 0);
-       
-      }
-      
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container:nth-of-type(2) {
+    margin-bottom: 500px; /* Abstand zwischen Abschnitt 2 und 3 */
+}
+
+.text1, .text {
+    width: 50%;
+    padding: 20px;
+    font-size: 35px;
+    word-spacing: -0.05em;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.bilder, .beschreibung {
+    scroll-snap-align: start;
+    padding: 20px;
+}
+
+.bilder img {
+    width: 80%;
+    filter: grayscale(100%);
+}
+
+.beschreibung {
+    font-size: 25px;
+    word-spacing: -0.05em;
+    letter-spacing: -0.02em;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.images-section {
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    padding-top: 20px;
+}
+
+
+/* Hintergrund Animation About Seite*/ 
       svg {
         position: fixed;
         z-index: 2; 
@@ -331,42 +380,38 @@ line-height: 0.6em;
       }
       
       .animated-path {
-        animation: draw 230s linear infinite;
+        animation: draw 230s linear forwards;
         stroke: #908c8c; /* Grün */
-        animation-direction: alternate;
+        animation-iteration-count: 1;
       }
       
       .animated-path2 {
-        animation: draw 250s linear infinite;
+        animation: draw 250s linear forwards;
         stroke: #e96f6f; /* Lila */
-        animation-direction: alternate;
+        animation-iteration-count: 1;
       }
     
       .animated-path3 {
-        animation: draw 260s linear infinite;
+        animation: draw 260s linear forwards;
         stroke: #db805f; /* Lila */
-        animation-direction: alternate;
        
       }
     
       .animated-path4 {
-        animation: draw 300s linear infinite;
+        animation: draw 300s linear forwards;
         stroke: #bc6161; /* Lila */
-        animation-direction: alternate;
        
       }
     
       .animated-path5 {
-        animation: draw 300s linear infinite;
+        animation: draw 300s linear forwards;
         stroke: #b0d574; /* Lila */
-        animation-direction: alternate;
        
       }
     
       .animated-path6 {
-        animation: draw 400s linear infinite;
+        animation: draw 400s linear forwards;
         stroke: #d5ed7b; /* Lila */
-        animation-direction: alternate;
        
       }
       
@@ -378,45 +423,3 @@ line-height: 0.6em;
           stroke-dasharray: 500, 0;
         }
       }
-    
-     .text {
-      
-      width: 460px;
-      padding: 20px;
-      font-size: 40px;
-      word-spacing: -0.05em;
-      letter-spacing: -0.02em;
-      border-width: 0.5px;
-      border-style: solid;
-      border-color: black;
-    
-      }
-    
-      .text1 {
-        width: 460px;
-        padding: 20px;
-        font-size: 40px;
-        word-spacing: -0.05em;
-        letter-spacing: -0.02em;
-        border-width: 0.5px;
-        border-style: solid;
-        border-color: black;
-         }
-         
-
- 
-         .bilder img {
-            filter: grayscale(100%);
-        }
-
-        .beschreibung {
-            width: 460px;
-            padding: 20px;
-            font-size: 30px;
-            word-spacing: -0.05em;
-            letter-spacing: -0.02em; 
-            border-width: 0.5px;
-            border-style: solid;
-            border-color: black;
-            
-        }
