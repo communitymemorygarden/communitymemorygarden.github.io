@@ -1,250 +1,252 @@
 @font-face {
-    font-family: 'Bon-Mono';
-    src: url(merchant-copy-font/MerchantCopy-GOXq.ttf)
+  font-family: 'Bon-Mono';
+  src: url(merchant-copy-font/MerchantCopy-GOXq.ttf)
 }
 
 body {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Bon-Mono';
-  background-color: rgb(255, 255, 255);
-  font-size: 50px;
-  overflow-x: hidden;
+background-size: contain;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: 'Bon-Mono';
+background-color: rgb(255, 255, 255);
+font-size: 50px;
+overflow-x: hidden;
 }
 
 .überschrift-garden {
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 70px;
-  position: fixed;
-  top: 30px;
-  margin-left: 20px;
-  font-family: 'Bon-Mono';
-  line-height: 0.6em;
+color: rgb(0, 0, 0);
+text-align: left;
+font-size: 5vw;
+position: fixed;
+top: 2vw;
+margin-left: 2vw;
+font-family: 'Bon-Mono';
+line-height: 0.6em;
 
 }
 
 .überschrift3 {
-    font-family: 'Bon-Mono';
-    text-align: left;
-    font-size: 17px;
+  font-family: 'Bon-Mono';
+  text-align: left;
+  font-size: 17px;
 }
 .post {
-  border: 0.5px solid #000000; 
-    padding: 3px; 
-    width: 460px;
-    font-family: 'Bon-Mono';
-    font-size: 40px;
-    height: fit-content;
-    padding: 20px;
-    
+border: 0.5px solid #000000; 
+  padding: 3px; 
+  width: 460px;
+  font-family: 'Bon-Mono';
+  font-size: 3vw;
+  height: fit-content;
+  padding: 20px;
+  max-width: 90%;
 }
 
 .timestamp {
-    font-size: 0.8em;
-    color: #000000;
-    margin-bottom: 5px;
-    text-align: center;
+  font-size: 0.8em;
+  color: #000000;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 img {
-    
-    width: 80%;
-    
+  
+  width: 80%;
+  max-width: 100%;
+  height: auto;
 }
 
 .image-container {
-   
-    text-align: center
+ 
+  text-align: center
 }
 
 #posts {
-    margin-top: 300px;
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    gap: 10px;
-    flex-direction: column;
-  
+  margin-top: 10vh;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+
 }
 
 hr {
 
-    border-top: 1px dashed rgb(0, 0, 0);
+  border-top: 1px dashed rgb(0, 0, 0);
 }
 
 
-  /* Button-Styling */
+/* Button-Styling */
 .button {
-    display: inline-block;
-    margin-left: 20px;
-    padding: 10px 20px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 35px;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 1vw;
 }
 
 .button:hover {
-    border: 1px solid #584c8f;
-    color: #584c8f;
+  border: 1px solid #584c8f;
+  color: #584c8f;
 }
 
 /* Button unten rechts für die About-Seite */
 #about-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-family: 'Bon-Mono';
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: 'Bon-Mono';
 }
 
 #back-button {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .überschrift {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: 'Bon-Mono';
-    text-align: center;
-    font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Bon-Mono';
+  text-align: center;
+  font-size: 22px;
 
 }
 
 .allgemeine-infos {
-  font-size: 0.8em;
-    color: #000000;
-    margin-bottom: 5px;
-    text-align: center;
+font-size: 0.8em;
+  color: #000000;
+  margin-bottom: 5px;
+  text-align: center;
 
 }
 
 .summe {
-    font-family: 'Bon-Mono';
-    text-align: center;
-    font-size: 22px;
+  font-family: 'Bon-Mono';
+  text-align: center;
+  font-size: 22px;
 
 }
 
 /* Hintergrund Animation Our Garden*/ 
 
 svg {
-  position: fixed;
-  z-index: 2; 
-  pointer-events: none;
+position: fixed;
+z-index: 2; 
+pointer-events: none;
 }
 
 .svg1 {
-  top: 0; /* Abstand von oben */
-  left: 600px; /* Abstand von links */
-  width: 500px;
-  height: auto;
-  opacity: 40%;
-  
+top: 0; /* Abstand von oben */
+left: 600px; /* Abstand von links */
+width: 500px;
+height: auto;
+opacity: 40%;
+
 } 
 .svg2 {
-  top: 0; /* Abstand von oben */
-  left: 700px; /* Abstand von links */
-  width: 700px;
-  height: auto;
-  opacity: 40%;
-  
+top: 0; /* Abstand von oben */
+left: 700px; /* Abstand von links */
+width: 700px;
+height: auto;
+opacity: 40%;
+
 } 
 
 .svg3 {
-  top: 0; /* Abstand von oben */
-  left: 0px; /* Abstand von links */
-  width: 800px;
-  height: auto;
-  opacity: 40%;
-  
+top: 0; /* Abstand von oben */
+left: 0px; /* Abstand von links */
+width: 800px;
+height: auto;
+opacity: 40%;
+
 } 
 .svg4 {
-  top: 500; /* Abstand von oben */
-  left: 0px; /* Abstand von links */
-  width: 500px;
-  height: auto;
-  opacity: 40%;
-  
+top: 500; /* Abstand von oben */
+left: 0px; /* Abstand von links */
+width: 500px;
+height: auto;
+opacity: 40%;
+
 } 
 
 .svg5 {
-  top: 0; /* Abstand von oben */
-  left: 80px; /* Abstand von links */
-  width: 1400px;
-  height: auto;
-  opacity: 40%;
-  
+top: 0; /* Abstand von oben */
+left: 80px; /* Abstand von links */
+width: 1400px;
+height: auto;
+opacity: 40%;
+
 } 
 
 path {
-  fill: none;
-  stroke-width: 1;
-  stroke-linecap: round;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+fill: none;
+stroke-width: 1;
+stroke-linecap: round;
+stroke-dasharray: 0;
+stroke-dashoffset: 0;
 }
 
 .animated-path {
-  animation: draw 130s linear forwards;
-  stroke: #584c8f; 
-  animation-iteration-count: 1;
-  display: none;
+animation: draw 130s linear forwards;
+stroke: #584c8f; 
+animation-iteration-count: 1;
+display: none;
 }
 
 .animated-path2 {
-  animation: draw 130s linear forwards;
-  stroke: #584c8f;
-  animation-iteration-count: 1;
+animation: draw 130s linear forwards;
+stroke: #584c8f;
+animation-iteration-count: 1;
 }
 
 .animated-path3 {
-  animation: draw 130s linear forwards;
-  stroke: #553838;
-  animation-iteration-count: 1;
+animation: draw 130s linear forwards;
+stroke: #553838;
+animation-iteration-count: 1;
 }
 
 .animated-path4 {
-  animation: draw 130s linear forwards;
-  stroke: #5a6dff; 
-  animation-iteration-count: 1;
+animation: draw 130s linear forwards;
+stroke: #5a6dff; 
+animation-iteration-count: 1;
 }
 .animated-path5 {
-  animation: draw 130s linear forwards;
-  stroke: #383547;
-  animation-iteration-count: 1;
+animation: draw 130s linear forwards;
+stroke: #383547;
+animation-iteration-count: 1;
 }
 
 @keyframes draw {
-  from {
-    stroke-dasharray: 0, 500;
-  }
-  to {
-    stroke-dasharray: 500, 0;
-  }
+from {
+  stroke-dasharray: 0, 500;
+}
+to {
+  stroke-dasharray: 500, 0;
+}
 }
 
 
 /* About Seite-Styling */
 
 .einleitung {
-  margin-top: 300px;
-  font-size: 35px;
-  word-spacing: -0.05em;
-  letter-spacing: -0.02em;
-  display: flex;
-  height: 65vh;
+margin-top: 300px;
+font-size: 35px;
+word-spacing: -0.05em;
+letter-spacing: -0.02em;
+display: flex;
+height: 65vh;
 }
 
 .überschrift-about {
-  text-align: right;
-  font-size: 70px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 5vw;
   position: fixed;
-  top: 30px;
-  right: 20px;
-  margin-right: 20px;
+  top: 2vw;
+  margin-left: 2vw;
   font-family: 'Bon-Mono';
   line-height: 0.6em;
 }
@@ -257,168 +259,168 @@ font-size: 35px;
 word-spacing: -0.05em;
 letter-spacing: -0.02em;
 display: flex;
-
 }
-      
+    
 .container {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 .container:nth-of-type(2) {
-    margin-bottom: 500px; /* Abstand zwischen Abschnitt 2 und 3 */
+  margin-bottom: 500px; /* Abstand zwischen Abschnitt 2 und 3 */
 }
 
 .text1, .text {
-    width: 50%;
-    padding: 20px;
-    font-size: 35px;
-    word-spacing: -0.05em;
-    letter-spacing: -0.02em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  width: 50%;
+  padding: 20px;
+  font-size: 35px;
+  word-spacing: -0.05em;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 1vw;
 }
 
 .text {
-    position: sticky;
-    top: 0;
-    height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .bilder, .beschreibung {
-    scroll-snap-align: start;
-    padding: 20px;
+  scroll-snap-align: start;
+  padding: 20px;
 }
 
 .bilder img {
-    width: 80%;
-    filter: grayscale(100%);
+  width: 80%;
+  filter: grayscale(100%);
 }
 
 .beschreibung {
-    font-size: 25px;
-    word-spacing: -0.05em;
-    letter-spacing: -0.02em;
-    padding: 20px;
-    padding-top: 0px;
+  font-size: 25px;
+  word-spacing: -0.05em;
+  letter-spacing: -0.02em;
+  padding: 20px;
+  padding-top: 0px;
 }
 
 .images-section {
-    width: 50%;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    padding-top: 20px;
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  padding-top: 20px;
 }
 
 
 /* Hintergrund Animation About Seite*/ 
-      svg {
-        position: fixed;
-        z-index: 2; 
-        opacity: 40%;
-        pointer-events: none;
-      }
+    svg {
+      position: fixed;
+      z-index: 2; 
+      opacity: 40%;
+      pointer-events: none;
+    }
+    
+  
+    .svg1 {
+      top: 0; 
+      left: 500px; 
+      width: 500px;
+      height: auto;
       
+    }
     
-      .svg1 {
-        top: 0; 
-        left: 500px; 
-        width: 500px;
-        height: auto;
-        
-      }
-      
+  
+    .svg2 {
+      top: 200px; 
+      left: 50px; 
+      width: 500px; 
+      height: auto;
+    }
     
-      .svg2 {
-        top: 200px; 
-        left: 50px; 
-        width: 500px; 
-        height: auto;
-      }
-      
-      .svg3 {
-        top: 80px; 
-        left: 900px; 
-        width: 500px; 
-        height: auto;
-        opacity: 40%;
-      }
-      .svg4 {
-        top: -10px; 
-        left: 800px; 
-        width: 200px; 
-        height: auto;
-        opacity: 100%;
-        display: none;
-      }
+    .svg3 {
+      top: 80px; 
+      left: 900px; 
+      width: 500px; 
+      height: auto;
+      opacity: 40%;
+    }
+    .svg4 {
+      top: -10px; 
+      left: 800px; 
+      width: 200px; 
+      height: auto;
+      opacity: 100%;
+      display: none;
+    }
+  
+    .svg5 {
+      top: -200px; 
+      left: 60px; 
+      width: 2000px; 
+      height: auto;
+      opacity: 40%;
+    }
+  
+    .svg6 {
+      top: 0px; 
+      left: 60px; 
+      width: 800px; 
+      height: auto;
+      opacity: 40%;
+    }
+  
+    path {
+      fill: none;
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+    }
     
-      .svg5 {
-        top: -200px; 
-        left: 60px; 
-        width: 2000px; 
-        height: auto;
-        opacity: 40%;
-      }
+    .animated-path {
+      animation: draw 230s linear forwards;
+      stroke: #908c8c; /* Grün */
+      animation-iteration-count: 1;
+    }
     
-      .svg6 {
-        top: 0px; 
-        left: 60px; 
-        width: 800px; 
-        height: auto;
-        opacity: 40%;
-      }
+    .animated-path2 {
+      animation: draw 250s linear forwards;
+      stroke: #e96f6f; /* Lila */
+      animation-iteration-count: 1;
+    }
+  
+    .animated-path3 {
+      animation: draw 260s linear forwards;
+      stroke: #db805f; /* Lila */
+     
+    }
+  
+    .animated-path4 {
+      animation: draw 300s linear forwards;
+      stroke: #bc6161; /* Lila */
+     
+    }
+  
+    .animated-path5 {
+      animation: draw 300s linear forwards;
+      stroke: #b0d574; /* Lila */
+     
+    }
+  
+    .animated-path6 {
+      animation: draw 400s linear forwards;
+      stroke: #d5ed7b; /* Lila */
+     
+    }
     
-      path {
-        fill: none;
-        stroke-width: 1;
-        stroke-linecap: round;
-        stroke-dasharray: 0;
-        stroke-dashoffset: 0;
+    @keyframes draw {
+      from {
+        stroke-dasharray: 0, 500;
       }
-      
-      .animated-path {
-        animation: draw 230s linear forwards;
-        stroke: #908c8c; /* Grün */
-        animation-iteration-count: 1;
+      to {
+        stroke-dasharray: 500, 0;
       }
-      
-      .animated-path2 {
-        animation: draw 250s linear forwards;
-        stroke: #e96f6f; /* Lila */
-        animation-iteration-count: 1;
-      }
-    
-      .animated-path3 {
-        animation: draw 260s linear forwards;
-        stroke: #db805f; /* Lila */
-       
-      }
-    
-      .animated-path4 {
-        animation: draw 300s linear forwards;
-        stroke: #bc6161; /* Lila */
-       
-      }
-    
-      .animated-path5 {
-        animation: draw 300s linear forwards;
-        stroke: #b0d574; /* Lila */
-       
-      }
-    
-      .animated-path6 {
-        animation: draw 400s linear forwards;
-        stroke: #d5ed7b; /* Lila */
-       
-      }
-      
-      @keyframes draw {
-        from {
-          stroke-dasharray: 0, 500;
-        }
-        to {
-          stroke-dasharray: 500, 0;
-        }
-      }
+    }
