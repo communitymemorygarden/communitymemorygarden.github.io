@@ -205,7 +205,7 @@ path {
   font-size: 5vw;
   position: fixed;
   top: 2vw;
-  margin-left: 2vw;
+  margin-left: 2.3vw;
   font-family: 'Bon-Mono';
   line-height: 0.6em;
 }
@@ -373,7 +373,7 @@ path {
   .überschrift-garden, .überschrift-about {
     font-size: 8vw;
     top: 2vw;
-    margin-left: 3vw;
+    margin-left: 4vw;
   }
 
   .button, #about-button {
