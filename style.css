@@ -72,33 +72,30 @@ hr {
 
 /* Button-Styling */
 .button {
-  display: inline-block;
-  margin-left: 20px;
-  padding: 10px 20px;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+  font-family: 'Bon-Mono';
   font-size: 35px;
-  margin-right: 1vw;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  z-index: 9999;
+  position: fixed; /* wichtig */
+  bottom: 20px;
+  right: 20px;
 }
+
 
 .button:hover {
   border: 1px solid #584c8f;
   color: #584c8f;
 }
 
-/* Button unten rechts für die About-Seite */
-#about-button {
+.fixed-bottom-right {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-family: 'Bon-Mono';
 }
 
-#back-button {
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-}
+
 
 .überschrift {
   margin-top: 30px;
@@ -376,7 +373,7 @@ path {
     margin-left: 4vw;
   }
 
-  .button, #about-button {
+  .button {
     font-size: 28px;
     padding: 8px 16px;
     margin-left: 0;
