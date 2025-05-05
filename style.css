@@ -353,7 +353,7 @@ path {
     margin-left: -1px;
   }
 
-  .images-section .post {
+  .images-section #posts {
     width: 100%;
     height: auto;
     overflow: visible;
