@@ -196,8 +196,9 @@ path {
   letter-spacing: -0.02em;
   display: flex;
   width: 50%;
+  position: fixed;
+  top: 2vw;
   margin-left: 2vw;
-  padding-top: 2vw;
 }
 
 .container {
