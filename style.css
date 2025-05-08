@@ -197,6 +197,7 @@ path {
   display: flex;
   width: 50%;
   margin-left: 2vw;
+  padding-top: 2vw;
 }
 
 .container {
