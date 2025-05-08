@@ -196,6 +196,7 @@ path {
   letter-spacing: -0.02em;
   display: flex;
   width: 50%;
+  margin-left: 1vw;
 }
 
 .container {
