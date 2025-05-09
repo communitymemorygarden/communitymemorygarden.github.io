@@ -178,7 +178,7 @@ path {
 /* About Seite-Styling */
 .einleitung {
   margin-top: 300px;
-  font-size: 35px;
+  font-size: 45px;
   word-spacing: -0.05em;
   letter-spacing: -0.02em;
   display: flex;
@@ -211,7 +211,7 @@ path {
 .text1, .text {
   width: 50%;
   padding: 20px;
-  font-size: 35px;
+  font-size: 45px;
   word-spacing: -0.05em;
   letter-spacing: -0.02em;
   display: flex;
